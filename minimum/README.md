@@ -5,8 +5,13 @@
 1. フロントエンドのセットアップ
 1. 動作確認
 
+## 前提
+- VS Codeがインストール済である
+- Pythonがインストール済である
+
 # バックエンドのセットアップ
 ## セットアップ
+1. VS Codeよりターミナルを起動する
 1. Python仮想環境のセットアップ
     ```
     mkdir venv
@@ -23,13 +28,16 @@
     python minimum/backend/server.py
     ```
 1. 動作確認
+    1. VS Codeより新しいターミナルを起動する
     1. jupyter notebookの実行
         - 下記コマンドを実行
         ```
+        source venv/flaskvenv/bin/activate
         jupyter notebook
         ```
     1. 動作確認
         - Jupyter notebookにて下記コードを実行する
+        - minimum/debug/test.ipynb
         ```python
         import requests
         def restapiGet(_url):
