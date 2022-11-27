@@ -14,7 +14,7 @@ export const App = () => {
   //
   const restapiGet = () => {
     console.log("App.js_restapiGet");
-    Axios.get('http://127.0.0.1:5000/', {}).then(function(res) {
+    Axios.get('http://127.0.0.1:8080/', {}).then(function(res) {
       console.log(res.data);
       setMessage((prev) => res.data)
     })
